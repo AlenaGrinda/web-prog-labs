@@ -30,3 +30,17 @@ a {
     color:rgb(255, 255, 255);
      text-decoration:none;
 }
+a:visited {
+    color:aquamarine;
+    background-color:gray ;
+}
+a:hover {
+    color:deeppink;
+    text-decoration: underline;
+    background-color:whitesmoke;
+    font-weight: bold;
+}
+a:active {
+    color:pink;
+    background-color:darkblue
+}
