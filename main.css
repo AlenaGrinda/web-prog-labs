@@ -1,0 +1,32 @@
+body {
+    background-color: darkslategrey; 
+    color: floralwhite;
+    font-family: Arial;
+    margin: 0px;
+}
+header {
+    background-color: black;
+    color: aquamarine;
+    font-family: Arial;
+    margin: 0px;
+    padding: 5px; 
+    font-size: 16pt;
+}
+footer {
+    background-color:black; 
+    color: aquamarine; 
+    font-family: Arial;
+    margin: 0px;
+    padding: 5px; 
+    font-size: 16pt; 
+    font-style: italic;
+    text-align: right;
+}
+a {
+    color:rgb(255, 255, 255); 
+    text-decoration:none;
+}
+a {
+    color:rgb(255, 255, 255);
+     text-decoration:none;
+}
