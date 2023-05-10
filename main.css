@@ -5,7 +5,7 @@ body {
     margin: 0px;
 }
 header {
-    background-color: black;
+    background:linear-gradient(to right, black, rgb(66, 66, 118),rgb(185, 252, 161), rgb(222, 222, 184)) ;
     color: aquamarine;
     font-family: Arial;
     margin: 0px;
@@ -13,7 +13,7 @@ header {
     font-size: 16pt;
 }
 footer {
-    background-color:black; 
+    background: linear-gradient(to right,rgb(222, 222, 184), gray,black);
     color: aquamarine; 
     font-family: Arial;
     margin: 0px;
@@ -30,17 +30,25 @@ a {
     color:rgb(255, 255, 255);
      text-decoration:none;
 }
+a {
+    color:rgb(255, 255, 255);
+     text-decoration:none;
+}
 a:visited {
     color:aquamarine;
     background-color:gray ;
+    
 }
 a:hover {
     color:deeppink;
     text-decoration: underline;
     background-color:whitesmoke;
     font-weight: bold;
+    text-shadow: 8px 3px 3px rgb(189, 115, 207);
+    transition: 300ms;
 }
 a:active {
     color:pink;
     background-color:darkblue
+    
 }
