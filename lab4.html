@@ -8,15 +8,25 @@
     <link rel="stylesheet" href="main.css">
     <style>
         div {
-            margin: 20px;
+           margin: 20px;
             border: 1px solid;
             border-radius: 7px;
             padding: 7px;
             width: 500px;
-            height: 250px;
+            height: 150px;
             overflow-y: auto;
             overflow-x: hidden;
+            position: relative;
+            background: linear-gradient( #9130ff, rgb(222 222 184));
         }
+        .second {
+            z-index: 1;
+            left: 380px;
+            top: 50px;
+            position: fixed;
+
+        }
+       
     </style>
 </head>
 
@@ -34,7 +44,7 @@
             всего лишь моё личное мнение; и, в-третьих, я не раз пользовался Википедией – что, 
             очевидно, не есть научная рецензируемая литература.
         </div>
-        <div>
+        <div class="second">
             Личное же мое мнение основано на неплохом опыте создания, продажи и банкротства разных 
             изнесов, успешной торговли на мировых биржах, пятилетнем опыте преподавания и научного 
             руководства студентами, наличии диплома кандидата экономических наук и живого 
