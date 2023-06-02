@@ -17,10 +17,14 @@ footer {
     color: aquamarine; 
     font-family: Arial;
     margin: 0px;
-    padding: 5px; 
-    font-size: 16pt; 
+    padding: 5px;
+    font-size: 11pt;
     font-style: italic;
     text-align: right;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: fixed;
 }
 a {
     color:rgb(255, 255, 255); 
