@@ -6,6 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Гринда Алена Игорвена. Лабораторная 4</title>
     <link rel="stylesheet" href="main.css">
+    <script>
+        function showSum() {
+            let a = 5;
+            let b = 7;
+            let result = a+b;
+            alert('Сумма ' + a + ' и ' + b + ' равна ' + result);
+        }
+        
+    </script>
+    <style>
+        .messege {
+            width: 250px;
+            height: 20px;
+            background: rgb(255, 152, 216);
+            text-align: center;
+            border: 2px solid ;
+            border-radius: 10px;
+            display: inline-block;
+            cursor: pointer;
+        }
+    </style>
 <head>
 <body>
     <header>
@@ -13,7 +34,8 @@
     </header>
 
     <main>
-
+        <div class="messege" onclick="showSum()">Найти сумму чисел</div>
+        <div class="messege">Узнать, кто автор страницы</div>
     </main>
 
     <footer>
