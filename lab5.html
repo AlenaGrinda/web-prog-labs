@@ -8,8 +8,10 @@
     <link rel="stylesheet" href="main.css">
     <script>
         function showSum() {
-            let a = 5;
-            let b = 7;
+            let inputA = document.getElementById('numberA');
+            let inputB = document.getElementById('numberB');
+            let a = parseInt(inputA.value);
+            let b = parseInt(inputB.value);
             let result = a+b;
             alert('Сумма ' + a + ' и ' + b + ' равна ' + result);
         }
@@ -38,6 +40,8 @@
     </header>
 
     <main>
+        <label>Первое число: <input type="number" value="5154" id="numberA"></label><br>
+        <label>Второе число: <input type="number" value="7891" id="numberB"></label><br>
         <div class="messege" onclick="showSum()">Найти сумму чисел</div>
         <div class="messege" onclick="showAuthor()">Узнать, кто автор страницы</div>
     </main>
