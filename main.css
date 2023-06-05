@@ -12,6 +12,10 @@ header {
     padding: 5px; 
     font-size: 16pt;
 }
+
+main {
+    margin: 10px 20px;
+}
 footer {
     background: linear-gradient(to right,rgb(222, 222, 184), gray,black);
     color: aquamarine; 
