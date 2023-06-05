@@ -75,8 +75,15 @@
 
         }
         
+        function showKrug(num) {
+            let krug = document.getElementById(num);
+            krug.style.transition = '3s';
+            krug.style.opacity = 0;
+        }
+        
     </script>
     <style>
+
         .messege {
             width: 250px;
             height: 20px;
@@ -87,11 +94,13 @@
             display: inline-block;
             cursor: pointer;
         }
+
         #output {
             border: 1px solid;
             width: 300px;
             height: 40px;
         }
+
         .korzina {
             border: 5px solid rgb(176, 0, 224);
             border-radius: 5px;
@@ -99,6 +108,19 @@
             margin-top: 10px;
             padding: 10px;
         }
+        
+        .krug {
+            margin-top: 30px;
+            margin-left: 5px;
+            width: 30px;
+            height: 24px;
+            text-align: center;
+            border: 3px solid rgb(255, 255, 255);
+            border-radius: 50%;
+            padding-top: 6px;
+            display: inline-block;
+        }
+
     </style>
 <head>
 <body>
@@ -135,6 +157,17 @@
             <p id="resultat"></p>
         </div>
 
+        <div class='krug' id="1"  style="color: rgb(13, 159, 0); background-color:rgb(255, 0, 0) ;" onclick="showKrug(1)">1</div>
+        <div class='krug' id="2"  style="color:rgb(134, 0, 175); background-color:rgb(255, 145, 0) " onclick="showKrug(2)">2</div>
+        <div class='krug' id="3"  style="color:rgb(0, 174, 6); background-color:rgb(255, 234, 6)" onclick="showKrug(3)">3</div>
+        <div class='krug' id="4"  style="color:rgb(230, 0, 0); background-color: rgb(21, 255, 0)" onclick="showKrug(4)">4</div>
+        <div class='krug' id="5"  style="color:rgb(255, 0, 195) ;background-color: rgb(0, 255, 255)" onclick="showKrug(5)">5</div>
+        <div class='krug' id="6"  style="color:rgb(255, 247, 0) ; background-color: rgb(17, 0, 255)" onclick="showKrug(6)">6</div>
+        <div class='krug' id="7"  style="color:rgb(255, 157, 0) ; background-color: rgb(144, 0, 255)" onclick="showKrug(7)">7</div>
+        <div class='krug' id="8"  style="color:rgb(0, 255, 255) ; background-color: rgb(255, 0, 238)" onclick="showKrug(8)">8</div>
+        <div class='krug' id="9"  style="color:rgb(254, 254, 254) ;background-color: midnightblue" onclick="showKrug(9)">9</div>
+        <div class='krug' id="10" style="color:rgb(255, 247, 0) ;background-color: rgb(255, 0, 0);" onclick="showKrug(10)">10</div>
+    
     </main>
 
     <footer onclick="showAuthor()">
