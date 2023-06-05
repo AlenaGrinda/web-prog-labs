@@ -40,6 +40,19 @@
             cursor: pointer;
             position: absolute;
         }
+        .expanding {
+            border: 3px solid black;
+            width: 100px;
+            cursor: pointer;
+            text-align: center;
+            background-color: rgb(255, 98, 0);
+            color: black;
+            padding: 10px;
+            margin: 30px;
+            hyphens: auto;
+            position: relative;
+            top: 50px;
+        }
     </style>
     <script>
         let number;
@@ -144,6 +157,17 @@
             }
             
         }
+        let count2 = 2;
+        function ExpandingBlock(div) {
+            count2++;
+            if (count2 < (1000/50+1)) {
+                div.style.width = (50*count2)+'px';
+            }
+            else {
+                div.style.width = '100px';
+                count2=2;
+            }
+        }
     </script>
 </head>
 
@@ -207,6 +231,8 @@
         <div class="click" onclick="changeClick(this)">
             Щёлкни меня
         </div>
+
+        <div class="expanding" onclick="ExpandingBlock(this)">Расширяющийся блок</div>
     </main>
 
     <footer>
