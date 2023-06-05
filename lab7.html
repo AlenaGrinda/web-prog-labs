@@ -46,6 +46,28 @@
                 transBlocks.appendChild(transBlock);
             }
         }
+        function bluePink() {
+            let rgs = document.getElementById('circles');
+            let input = document.getElementById('switch');
+            let userNumber = parseInt(input.value);
+
+            for (let i=0; i<userNumber; i++) {
+                let rg = document.createElement('div');
+                rg.style.borderRadius = '50%';
+                rg.style.padding= '20px';
+                rg.style.width = '20px';
+                rg.innerHTML = userNumber-i;
+                rg.style.textAlign = 'center';
+                rg.style.color = 'white';
+                rgs.appendChild(rg);
+                if ((userNumber-i)%2==0) {
+                    rg.style.background = 'pink';
+                }
+                else { 
+                    rg.style.background = 'blue';
+                }
+            }
+        }
     </script>
 </head>
 <body>
@@ -63,6 +85,10 @@
 
         <button onclick="addTransparentBlocks()">Создать полупрозрачные блоки</button>
         <div id="transparent-blocks"></div>
+        
+        <input type="number" value="5" id="switch" placeholder="Введите число кругов">
+        <button onclick="bluePink()">Синие/розовое</button>
+        <div id="circles"></div>
     </main>
 
     <footer>
